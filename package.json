@@ -1,0 +1,33 @@
+{
+  "name": "xml-magic",
+  "version": "1.0.0",
+  "description": "XML everywhere",
+  "main": "src/index.ts",
+  "scripts": {
+    "test:all": "concurrently -r --kill-others-on-fail \"yarn test\" \"yarn lint\"",
+    "test": "jest",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WarmVissarutRonaldoDude/xml-magic.git"
+  },
+  "author": "Vissarut Tantiwattanarom",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WarmVissarutRonaldoDude/xml-magic/issues"
+  },
+  "homepage": "https://github.com/WarmVissarutRonaldoDude/xml-magic#readme",
+  "dependencies": {
+    "xml2json": "^0.12.0"
+  },
+  "devDependencies": {
+    "@types/xml2json": "^0.11.0",
+    "@typescript-eslint/eslint-plugin": "^2.30.0",
+    "@typescript-eslint/parser": "^2.30.0",
+    "concurrently": "^5.2.0",
+    "eslint": "^6.8.0",
+    "jest": "^25.5.3",
+    "typescript": "^3.8.3"
+  }
+}
